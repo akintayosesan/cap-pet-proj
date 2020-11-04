@@ -12,7 +12,7 @@ pipeline {
         }
         stage('pull down code base'){
             steps{
-                sh 'git clone https://github.com/joebadmus/NewLiquorStore.git codebase'
+                sh 'git clone https://github.com/joebadmus/cap-pet-proj.git codebase'
             }
         }
 
@@ -25,7 +25,7 @@ pipeline {
 
         stage('Deploy image to docker hub'){
             steps {
-                
+
                 echo 'code Deployed'
             }
         }
